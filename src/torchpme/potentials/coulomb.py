@@ -101,7 +101,7 @@ class CoulombPotential(Potential):
             raise ValueError(
                 "Cannot compute background correction without specifying `smearing`."
             )
-        return torch.pi * self.smearing**2
+        return 0 #torch.pi * self.smearing**2
 
     self_contribution.__doc__ = Potential.self_contribution.__doc__
     background_correction.__doc__ = Potential.background_correction.__doc__
